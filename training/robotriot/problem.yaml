@@ -1,0 +1,8 @@
+author: Bjarki Ágúst Guðmundsson
+source: Programmeringsolympiadens träning
+license: cc by
+validation: default
+type: scoring
+grading:
+    range: 0 100
+    objective: max

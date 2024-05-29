@@ -1,0 +1,50 @@
+\problemname{Matt i ett drag}
+
+\begin{quote}
+	Vit drar och gör matt i ett drag.
+\end{quote}
+
+När du tittar tillbaka i dina gamla årgångar av \emph{Schacknytt} hittar du massvis av schackpussel. Tyvärr inser du att
+det var alldeles för länge sedan du spelade schack, och även triviala pussel som att hitta matt i ett drag är numera
+långt över din förmåga.
+
+Men skam den som ger sig. Du inser såklart att du istället kan använda dina nyfunna algoritmiska kunskaper för att lösa problemet
+genom att göra ett program som hittar det vinnande draget.
+
+Brädet du får uppfyller följande villkor:
+
+\begin{itemize}
+	\item Ingen spelare kan göra rockad.
+	\item Ingen spelare kan göra \emph{en passant}.
+	\item Spelbrädet är en möjlig position.
+	\item Vit kan sätta svart i matt i ett drag.
+\end{itemize}
+
+Ditt program ska skriva ut vilket drag vit ska göra för att sätta svart i matt.
+
+\section*{Indata}
+Indatan består av 8 rader med 8 tecken var. Den första raden är rad \emph{8} på schackbrädet, och den sista raden är rad \emph{1} på schackbrädet.
+
+Den första kolumnen är kolumn \emph{a} och den sista kolumnen är kolumn \emph{h}.
+
+Varje tecken representerar en  pjäs som följer:
+
+\begin{description}
+	\item[P] vit bonde 
+	\item[N] vit springare 
+	\item[B] vit löpare 
+	\item[R] vitt torn 
+	\item[Q] vit dam
+	\item[K] vit kung
+	\item[p] svart bonde 
+	\item[n] svart springare 
+	\item[b] svart löpare 
+	\item[r] svart torn 
+	\item[q] svart dam
+	\item[k] svart kung
+	\item[.] tom ruta
+\end{description}
+
+\section*{Utdata}
+Utdatan ska vara ett drag specifierat som fyra tecken. De två första tecknen ska ange vilken ruta 
+vit flyttar från, och de andra två vilken ruta vit flyttar till. En ruta anges som \emph{xy}, där $x$ är kolumnen och $y$ raden.

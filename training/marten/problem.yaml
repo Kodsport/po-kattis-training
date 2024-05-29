@@ -1,0 +1,11 @@
+name:
+  en: Mårten's DFS
+  sv: Mårtens DFS
+type: scoring
+author: Johan Sannemo
+source: Programmeringsolympiaden Träning 2015
+license: cc by-sa
+rights_owner: Programmeringsolympiaden
+grading:
+  range: 0 100
+  objective: max

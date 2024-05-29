@@ -1,0 +1,18 @@
+\problemname{Caesar}
+
+Redan de gamla grekerna förstod att det inte var så smart att skicka hemliga meddelanden utan att kryptera dem. Och det var tur för romarna, så att de kunde ta åt sig äran och låtsas ha uppfunnit det urgamla \emph{Caesar-chiffret} själva.
+
+Chiffret används för att göra text svårare att läsa för obehöriga, genom att ändra varje bokstav i ordet. Varje bokstav förskjuts $k$ steg i alfabetet, så när $k = 2$ kommer chiffret ändra $a$ till $c$, $b$ till $d$, ..., $z $ till $b$. I detta problem kommer vi endast betrakta ett alfabet med 26 bokstäver, nämligen $a$ till och med $z$.
+
+Du kommer få ett ord som har krypterats med Caesar-chiffret, samt vilket $k$-värde som användes. Din uppgift är att dechiffrera ordet.
+
+\section*{Indata}
+Den första raden i indatan innehåller ett positivt heltal $1 \le k < 26$, förskjutningen i chiffret.
+
+Nästa rad innehåller ordet du ska dechiffrera.
+
+\section*{Utdata}
+Du ska skriva ut en rad med det dechiffrerade ordet.
+
+\section*{Exempel}
+I det första exemplet har vi översatt hela alfabetet med ett $k$-värde på 1, så dechiffreringen av $bcd$ är $abc$,

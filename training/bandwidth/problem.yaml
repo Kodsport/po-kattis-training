@@ -1,0 +1,11 @@
+name:
+  en: Bandwidth
+  sv: Bandbredd
+type: scoring
+author: Johan Sannemo
+source: Programmeringsolympiadens träning 2015
+license: cc by-sa
+rights_owner: Programmeringsolympiaden
+grading:
+  range: 0 100
+  objective: max

@@ -1,0 +1,38 @@
+\problemname{Mårtens DFS}
+Du får givet en enkel, sammanhängande graf $G$ med $N$ hörn. Varje hörn i $G$ har numrerats med tal mellan $0$ och $N-1$.
+
+Avgör om en lista med heltal $L$ är en giltig djupet först-sökning. En giltig djupet först-sökning är en som kan genereras av följande procedur, anropad med något argument mellan $0$ och $N - 1$:
+
+\begin{verbatim}
+DFS(start):
+  skriv ut start
+  sett[start] = true
+  för varje v : grannar(start):
+    om inte sett[start]:
+      DFS(v)
+\end{verbatim}
+
+Observera att grannarna till ett visst hörn kan gås igenom \emph{i vilken ordning som helst} av Mårtens algoritm.
+
+\section*{Indata}
+Den första raden innehåller två heltal $1 \le N \le 100\,000$ och $0 \le E \le 300\,000$, antalet hörn och kanter i $G$.
+
+De nästa $E$ raderna innehåller två heltal $0 \le a, b \le N - 1$, som beskriver en kant i $G$ mellan hörnen $a$ och $b$.
+
+Den sista raden kommer innehålla en (möjligtvis tom) blankstegs-separerad lista $L$ med heltal.
+
+\section*{Utdata}
+Du ska skriva ut \texttt{YES} om $L$ är en giltig djupet först-sökning. Annars ska du skriva ut \texttt{NO}.
+
+\section*{Poängsättning}
+Din lösning kommer att testas på en mängd testfallsgrupper. För att få poäng
+för en grupp så måste du klara alla testfall i gruppen.
+
+\begin{tabular}{| l | l | l | l |}
+    \hline
+    Grupp & Poängvärde & Gränser    \\ \hline
+    1     & 19         & $1 \le n \le 8$ och $1 \le m \le 28$ \\ \hline
+    2     & 43         & $1 \le n \le 1\,000$ och $1 \le m \le 5\,000$ \\ \hline
+    3     & 38         & $1 \le n \le 100\,000$ och $1 \le m \le 300\,000$ \\ \hline
+\end{tabular}
+

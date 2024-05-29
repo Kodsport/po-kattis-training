@@ -1,0 +1,64 @@
+\problemname{Vectorfunktioner}
+
+Du ska implementera funktionerna
+
+\begin{verbatim}
+// Vänd på en vektor.
+// Notera att den skickas som referens, 
+// så du ska vända samma vektor som skickas in.
+void reverse(vector<int>& vec){
+	...
+}
+
+// Välj ut vartannat element ur en vektor (första, tredje, osv)
+// och returnera en ny vektor med svaret.
+// Du får inte modifiera vektorn, trots att den skickas som referens.
+// Därför används "const" framför parametern.
+vector<int> vartannat(const vector<int>& vec){
+	...
+}
+
+// Returnera det minsta värdet i en vektor.
+int minsta(const vector<int>& vec){
+	...
+}
+
+// Returnera summan av elementen i en vektor.
+int summa(const vector<int>& sum){
+  ...
+}
+
+// Räkna antalet udda heltal, som dessutom befinner
+// sig på udda index (räknat noll-indexerat!)
+int veryOdd(const vector<int>& suchVector){
+  ...
+}
+\end{verbatim}
+
+i C++ och skicka in dessa. Kattis kommer sedan testa att funktionerna beter sig korrekt.
+
+Vektorerna som skickas in kan ha upp till och med $100\,000$ element. Varje tal i vektorn är i intervallet $[-2000, 2000]$.
+
+\section*{Exempel}
+\begin{verbatim}
+// Skapa ny vektor med elementen 1, 1, 2, 5, 6, 0
+vector<int> test = {1, 1, 2, 5, 6, 0};
+
+reverse(test);
+=> test ska nu vara {0, 6, 5, 2, 1, 1}
+
+vector<int> result = vartannat(test);
+=> result ska innehålla {0, 5, 1}
+
+cout << minsta(test) << endl;
+=> ska skriva ut det minsta talet, 0
+
+cout << summa(test) << endl;
+=> ska skriva ut summan, 15
+
+cout << veryOdd(test) << endl;
+=> ska skriva ut då endast det sista talet, 1 (på index 5) är udda och 
+   befinner sig på en udda position.
+\end{verbatim}
+
+\textbf{Obs}: se till att du har rätt namn och parametrar på funktionerna du skickar in. Säkrast är att kopiera kodskelettet ovanför.

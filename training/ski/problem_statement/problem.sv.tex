@@ -1,0 +1,29 @@
+\problemname{Skidoptimering}
+
+Simone bor längst upp på ett väldigt högt, snöigt berg i norra Sverige. När Simone ska åka från sitt hus på toppen till något annat ställe på berget så kan hon använda ett system av enkelritade liftar mellan visa platser.
+
+Just nu så finns det för varje plats på berget exakt en lift som tar Simone till någon annan plats på berget (på hemvägen brukar hon gå, men när hon ska åka dit vill hon bestämt använda liftar). Dessvärre tar det ofta ganska lång tid att resa, eftersom hon kan behöva använda väldigt många liftar för att ta sig till sin destination.
+
+Nyligen fick Simone ett stort bidrag från Sveriges Nysnö-Överbeskyddare (SNÖ), för att bygga flera liftar på berget i syfte att folk inte ska behöva trampa sönder all nysnö på berget. Simone bryr sig dock inte så mycket om snön, hon vill bara kunna resa snabbare. Mer precis vill hon kunna ta sig från sitt hus till alla andra platser på berget genom att använda högst $K$ liftar.
+
+Nu undrar hon om sitt bidrag täcker detta, och har därmed frågat dig om du kan beräkna hur många nya liftar hon måste köpa.
+
+\section*{Indata}
+Den första raden i indata består av två heltal $2 \le N$ och $1 \le K$ -- antalet platser på berget och det första antalet liftar hon måste använda. Platserna är numrerade mellan $1$ och $N$, och hennes hem har nummer $1$.
+
+De följande $N$ raderna innehåller två heltal $1 \le A \not= B \le N$, vilket betyder att det finns en lift som tar Simone från plats $A$ till plats $B$.
+
+\section*{Utdata}
+Den första och enda raden i utdata ska innehålla ett enda heltal, det minsta antalet liftar Simone måste bygga.
+
+\section*{Poängsättning}
+Din lösning kommer att poängsättas på en mängd testfall. För att få poäng för en grupp så måste du klara alla testfall i gruppen.
+
+\begin{tabular}{|l|l|l|}
+\hline
+Grupp & Poäng & Gränser \\ \hline
+1 & 19 & $N \le 150, K \le 10$ \\ \hline
+2 & 24 & $N \le 5000, K \le 20$ \\ \hline
+3 & 37 & $N \le 100\,000, K \le 20\,000$ \\ \hline
+4 & 20 & $N \le 500\,000, K \le 20\,000$ \\ \hline
+\end{tabular}

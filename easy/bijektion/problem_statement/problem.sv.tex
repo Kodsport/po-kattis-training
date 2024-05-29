@@ -1,0 +1,13 @@
+\problemname{Bijektion}
+
+En \emph{bijektion} mellan två mängder $X$ och $Y$ är en funktion $$f : X \rightarrow Y$$ så att det för varje $y \in Y$ finns exakt ett $x \in X$ så att $f(x) = y$. Detta innebär alltså att vi kan para ihop varje element $x \in X$ med ett element ur $Y$, nämligen $f(x)$.
+
+I det här problemet betraktar vi mängderna $X = \{1, 2, ..., N\}$ och $Y = \{1, 2, ..., M\}$. Givet samtliga funktionsvärden för en funktion $f : X \rightarrow Y$ ska du avgöra om funktionen är en bijektion mellan $X$ och $Y$.
+
+\section*{Indata}
+Den första raden i indatan innehåller heltalen $1 \le N \le 100$ och $1 \le M \le 100$.
+
+Nästa rad innehåller $N$ heltal. Dessa är, i ordning, $f(1), f(2), ..., f(N)$.
+
+\section*{Utdata}
+Om $f$ är en bijektion ska du skriva ut \texttt{Bijektion}. Annars ska du skriva ut \texttt{Nope}.
