@@ -1,0 +1,31 @@
+\problemname{Bandwidth}
+A computer network consists of $N$ computers with $M$ different direct links between some pairs of computers. Each link $i$ has a \emph{bandwidth} $b_i$ associated with it.
+
+For a sequence of consecutive links $a_1, a_2, ..., a_k$, the bandwidth of the sequence is the minimal bandwidth among all the invidual links. Thus a sequence of links with bandwidths $4, 3, 1, 2$ has bandwidth 1.
+
+Given two computers $a$, $b$, we let $B(a, b)$ be the maximum possible bandwidth among all the possible link paths between $a$ and $b$. The \emph{minimum bandwidth} of the entire computer network is the minimum of $B(a, a)$ for all pairs of computers. So if $B(0, 1) = 1, B(1, 2) = 4, B(0, 2) = 3$, the minimum bandwidth is 1.
+
+
+\section*{Input}
+The first line of input contains two integers $1 \le N \le 10^5$ and $0 \le M \le 3 \cdot 10 ^5$, the number of computers and links in the network.
+
+The next $M$ lines contains three integers $0 \le a, b \le N - 1$ and $1 \le c \le 3 \cdot 10^5$, meaning that there is a direct link between the computers $a$ and $b$ with bandwidth $c$.
+
+The input is always constructed so that there is a path of links between any pair of nodes.
+
+
+\section*{Output}
+You should output a single integer $B$ - the minimum bandwidth of the network.
+
+\section*{Points}
+Your solution will be tested on several test case groups.
+To get the points for a group, it must pass all the test cases in the group.
+
+\noindent
+\begin{tabular}{| l | l | p{12cm} |}
+  \hline
+  \textbf{Group} & \textbf{Point value} & \textbf{Constraints} \\ \hline
+  $1$    & $23$      & $2 \le n \le 8$, $1 \le m \le 28$ \\ \hline
+  $2$    & $30$      & $2 \le n \le 1\,000$, $1 \le m \le 5\,000$ \\ \hline
+  $3$    & $47$      & No additional constraints. \\ \hline
+\end{tabular}

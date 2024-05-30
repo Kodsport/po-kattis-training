@@ -1,0 +1,40 @@
+\problemname{Ski optimization}
+
+Simone lives on the top of a very high, snowy mountain in northern Sweden. When Simone wants to go from her house on the top
+to some other place on the mountain, she can use a system of one-way lifts between some places.
+
+Currently, for each place on the mountain there is exactly one lift which will take Simone to some other place on the
+mountain (she usually walks back home). However, this means that travelling takes a lot of time, since the number
+of lifts Simone may have to take from her home to her destination may be really large.
+
+Recently, Simone got a large grant from the Swedish Association for Mountain Entertainment (SAME) to build more lifts on
+the mountain, to further enhance the mountains' tourism. Simone doesn't care much for tourism though, she just wants
+to be able to travel faster. In fact, she doesn't want to have to travel using more than $K$ lifts from her house,
+regardless of her destination.
+
+She wonders if her grant will cover this, and has thus asked you to compute the number of new lifts she must build.
+
+\section*{Input}
+The first line of input contains two integers $N$ and $K$ ($2 \le N \leq 5 \cdot 10^5$, $1 \le K \leq 2 \cdot 10^4$),
+the number of locations on the mountain and the maximum number of lifts Simone wants to use. The locations are
+numbered between $1$ to $N$, and her home has number $1$.
+
+The following $N$ lines contains two integers $1 \le A \not= B \le N$, meaning that there is a lift taking
+Simone from location $A$ to location $B$.
+
+\section*{Output}
+Print an integer: the minimum number of lifts Simone must build.
+
+\section*{Points}
+Your solution will be tested on several test case groups.
+To get the points for a group, it must pass all the test cases in the group.
+
+\noindent
+\begin{tabular}{| l | l | p{12cm} |}
+  \hline
+  \textbf{Group} & \textbf{Point value} & \textbf{Constraints} \\ \hline
+  $1$    & $19$      & $N \leq 150, K \leq 10$ \\ \hline
+  $2$    & $24$      & $N \leq 5000, K \leq 20$ \\ \hline
+  $3$    & $37$      & $N \leq 10^5$ \\ \hline
+  $4$    & $20$      & No additional constraints. \\ \hline
+\end{tabular}

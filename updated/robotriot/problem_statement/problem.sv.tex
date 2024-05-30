@@ -1,0 +1,47 @@
+\problemname{Röjarrobotar}
+
+En grupp gymnasiestudenter har nyligen experimenterat med robotar. De hade
+länge fruktat att denna dag skulle komma, men nu har deras värsta
+mardrömar till slut slagit in: robotarnas artificiella intelligens har blivit
+så avancerad att de börjat tänka själva, och de tänker självfallet förstöra
+mänskligheten.
+
+Turligt nog finns det fortfarande hopp eftersom robotarna fortfarande är inne
+i skolan, och det är inte känt huruvida de faktiskt kan komma ut.
+Din uppgift är att, givet skolans planritning och robotarnas position, avögra
+om någon av robotarna kan fly, eller om de alla är fast inne i skolan.
+
+Planritningen är en $n \times m$ matris som består av följande tecken:
+
+\begin{itemize}
+    \item `\texttt{.}' betecknar en tom golvruta.
+    \item `\texttt{\#}' betecknar en vägg eller en stängd dörr. 
+    \item `\texttt{X}' betecknar en robot.
+\end{itemize}
+
+Robotar kan köra mellan rutor som har en gemensam kant (men inte digonalt).
+
+En robot kan fly från skolan om den kan nå kanten av våningsplanet.
+
+\section*{Indata}
+Den första raden i indatan innehåller två heltal $n, m$ ($1 \leq n,m \leq 1000$),
+dimensionerna av planritningen. Sedan
+följer $n$ rader, som alla innehåller $m$ tecken. Dessa beskriver planritningen
+på sättet som definerades ovan. Du kan anta att inga robotar eller väggar är på
+kanten av våningsplanet.
+
+\section*{Utdata}
+Du ska skriva ut en rad som innehåller ``\texttt{Death to humans}'' om någon av robotarna kan
+fly, annars ska du skriva ut ``\texttt{We are safe}''.
+
+\section*{Poängsättning}
+Din lösning kommer att testas på en mängd testfallsgrupper. För att få poäng
+för en grupp så måste du klara alla testfall i gruppen.
+
+\noindent
+\begin{tabular}{| l | l | p{12cm} |}
+  \hline
+  \textbf{Grupp} & \textbf{Poäng} & \textbf{Gränser} \\ \hline
+  $1$    & $63$      & $1 \le n, m \le 100$ \\ \hline
+  $2$    & $37$      & Inga ytterligare begränsningar. \\ \hline
+\end{tabular}

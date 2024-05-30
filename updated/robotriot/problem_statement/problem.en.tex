@@ -1,0 +1,48 @@
+\problemname{Robot Riot}
+
+A group of high school students have recently been experimenting with robots.
+They had long feared this day would come, but now their worst nightmare has
+been realized: the artificial intelligence of the robots has become so advanced
+that they've started to think for themselves, and are of course going to
+destroy all humanity.
+
+Fortunately there is still hope since the robots are currently inside the
+school, and it is not known if they can get out. Your task is, given the floor
+plan of the school and the locations of the robots, determine if any of them
+can escape, or if they're all stuck inside.
+
+The floor plan is given as an $n\times m$ matrix consisting of the following characters:
+
+\begin{itemize}
+    \item `\texttt{.}' denoting empty floor space
+    \item `\texttt{\#}' denoting a wall or a closed door
+    \item `\texttt{X}' denoting a robot
+\end{itemize}
+
+Robots can drive to adjacent empty floor spaces (but not diagonally).
+
+A robot can escape outside if it can reach the edge of the floor plan.
+
+\section*{Input}
+The first line of input contains two integers $n, m$ ($ 1 \leq n,m \leq 1000$),
+the dimensions of the floor plan. Then
+follow $n$ lines, each containing $m$ characters, describing the floor plan as
+defined above. You can assume that no robots or walls are on the border of the
+floor plan.
+
+\section*{Output}
+Output one line containing ``\texttt{Death to humans}'' if any of the robots
+can escape, or ``\texttt{We are safe}'' otherwise.
+
+\section*{Points}
+Your solution will be tested on several test case groups.
+To get the points for a group, it must pass all the test cases in the group.
+
+\noindent
+\begin{tabular}{| l | l | p{12cm} |}
+  \hline
+  \textbf{Group} & \textbf{Point value} & \textbf{Constraints} \\ \hline
+  $1$    & $63$      & $1 \le n, m \le 100$ \\ \hline
+  $2$    & $37$      & No additional constraints. \\ \hline
+\end{tabular}
+
