@@ -1,0 +1,28 @@
+\problemname{Telefonkatalog}
+
+Per-Magnus har fått jobb på \texttt{1337 1337}, hackervärldens nummerupplysningstjänst. I hans jobb ingår att ta emot förfrågningar om telefonnummer till personer, samt lägga in nya telefonnummer. Efter en feluppslagning för mycket är han dock nära på att få sparken, och han har därmed vänt sig till dig.
+
+Skapa ett program åt Per-Magnus som han kan använda på jobbet. Ditt program ska ha tre funktioner:
+
+\begin{verbatim}
+void uppdateraNummer(string namn, string nummer){
+  ...
+}
+
+bool raderaNummer(string namn){
+  ...
+}
+
+string uppslagning(string namn){
+  ...
+}
+\end{verbatim}
+
+\paragraph*{\texttt{uppdateraNummer(namn, nummer)}} Denna funktion ska uppdatera det inlagda nummret till en viss person.
+
+\paragraph*{\texttt{raderaNummer(namn)}} Denna funktion ska ta bort ett visst nummer helt ut katalogen. Det är \emph{inte garanterat} att personens nummer redan finns inlagt. Returnera \texttt{true} om nummret fanns, och \texttt{false} annars.
+
+\paragraph*{\texttt{uppslagning(namn)}}  Om personen har ett nummer inlagt ska du returnera det. Annars returnerar du strängen \texttt{``finns ej''}.
+
+\section*{Poängsättning}
+Din lösning kommer att testas på flera testfall. För att få 100 poäng så måste du klara alla testfall.

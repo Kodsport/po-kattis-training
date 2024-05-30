@@ -1,0 +1,9 @@
+INT(1,100000,n) NEWLINE
+REP(n, NEWLINE)
+	INT(0,2,type) SPACE REGEX("[a-z]+")
+	IF(type == 2)
+		SPACE REGEX("[0-9]+")
+	END
+END
+NEWLINE
+EOF

@@ -1,0 +1,18 @@
+\problemname{Fullsatt buss}
+
+Ett vanligt problem med stadsbussar är att de ofta blir fulla så att man måste vänta på nästa buss. Händer detta upprepade gånger blir de som tvingas vänta riktigt sura, och det är ju inte så bra.
+
+Lokalholmens Stortrafik (LS) vill åtgärda detta problem. Man införde ett system vid busshållplatserna, där varje passagerare skriver in vilken buss de ska ta och vart. På så sätt kan LS snabbt se var bussarna kommer bli fulla så att folk måste vänta. De undrar nu hur många personer som måste vänta på de olika hållplatserna, givet vart passagerarna ska. Din uppgift är att räkna ut detta.
+
+Bussen trafikerar $N$ hållplatser i ordningen $1, 2, ..., N$ och har plats för $C$ passagerare. På varje hållplats står en kö av människor som vill på bussen. De stiger på, en i taget, tills bussen är slut. Resterande personer måste alltså vänta på nästa buss.
+
+\section*{Indata}
+Den första raden innehåller de två heltalen, $1 \le N \le 100$ och $1 \le C \le 50$.
+
+De nästa $N - 1$ raderna innehåller de olika hållplatsernas köer. Varje rad börjar med ett heltal $A_i$, antalet personer som står i kön. Sedan följer $A_i$ heltal som beskriver vilken hållplats passagerarna ska till. Heltalen ges i samma ordning som passagerarna köar i. Det första heltalet i listan är alltså hållplatsen som personen först i kön ska till.
+
+\section*{Utdata}
+Du ska skriva ut ett enda heltal - antalet passagerare som måste vänta på nästa buss.
+
+\section*{Poängsättning}
+Din lösning kommer att testas på flera testfall. För att få 100 poäng så måste du klara alla testfall.
