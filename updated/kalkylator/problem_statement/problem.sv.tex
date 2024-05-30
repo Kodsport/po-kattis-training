@@ -1,0 +1,27 @@
+\problemname{Kalkylator}
+
+Beräkningar uppkommer ofta i livet. T.ex när man spelar Yatzy, när man försöker verka smart eller vid planering av recept.
+
+Det har dock empiriskt visat sig att beräkningar är jättetråkiga att göra, och de blir ofta fel. Du har därför
+bestämt dig för att programmera en enkel miniräknare istället.
+
+Ett aritmetiskt uttryck är på formen:
+
+$$siffra = 0, 1, 2, ..., \text{ eller } 9$$
+
+$$operator = +, -, * \text{ eller } /$$
+
+$$uttryck = siffra \text{ eller } uttryck \text{ } operator \text{ } siffra$$
+
+T.ex. är $5 + 2 / 2 * 5 - 1$ ett uttryck, medan $22 * 4$, $-5 + 2$ eller $5 + - 2$ inte är uttryck.
+
+Givet ett uttryck, beräkna dess värde. Notera att vi tar hänsyn till operatorernas ordning! Först ska alla divisioner mellan tal utföras (vänster till höger), sedan ska alla multiplikationer utföras. Till sist ska alla additioner och subtraktioner utföras som vanligt, från vänster till höger.
+
+\section*{Indata}
+Den första och enda raden i indatan innehåller ett uttryck. Uttrycket kommer inte innehålla några blanksteg.
+
+\section*{Utdata}
+Skriv ut tal - värdet av uttrycket.
+
+\section*{Poängsättning}
+Din lösning kommer att testas på flera testfall. För att få 100 poäng så måste du klara alla testfall.
