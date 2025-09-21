@@ -1,4 +1,0 @@
-INT(1, 25, n) NEWLINE
-REGEX("[a-z]+")
-NEWLINE
-EOF

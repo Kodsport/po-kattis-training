@@ -1,6 +1,0 @@
-N=1000000
-for i in {0..1}; do python gen.py $N 1 >secret$i.in; done
-for i in {2..4}; do python gen.py $N 0 >secret$i.in; done
-for i in {5..7}; do python gen.py $N -1 >secret$i.in; done     
-for i in {8..9}; do python gen.py -$N >secret$i.in; done    
-for i in {0..9}; do ./triangel <secret$i.in >secret$i.ans; done
