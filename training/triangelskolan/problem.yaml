@@ -1,6 +1,8 @@
+uuid: 51beebd9-390d-4344-93b4-54d3263157bc
 author: Par Soderhjelm
 license: cc by-sa
-rights_owner: Programmeringsolympiaden Övningsproblem
+rights_owner: Programmeringsolympiaden
+source: Programmeringsolympiaden
 type: scoring
 grading:
   show_test_data_groups: true
