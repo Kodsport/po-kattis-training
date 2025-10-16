@@ -3,10 +3,10 @@
 
 
 using namespace std;
-
+using ll = long long;
 
 void run() {
-	Int(1, int(1e6));
+	Int(1, ll(1e12));
 	Endl();
 	Eof();
 }
