@@ -1,0 +1,9 @@
+uuid: 2aecce6e-d8bf-49f1-b9f1-5218c5137dba
+license: cc by-sa
+source: Programmeringsolympiaden Träning
+rights_owner: Programmeringsolympiaden
+grading:
+  show_test_data_groups: true
+type: scoring
+
+validator_flags: float_tolerance 1e-4

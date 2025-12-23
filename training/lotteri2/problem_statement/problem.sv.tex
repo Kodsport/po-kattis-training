@@ -1,0 +1,19 @@
+\problemname{Lotteri}
+
+På en karneval i din stad finns ett lotteri.
+För att spela tar du en handfull lappar från en skål, där det står ett tal på varje lapp.
+Det finns en exakt $50\%$ sannolikhet att du drar varje lapp.
+Denna sannolikheten är oberoende för alla lappar.
+Du vinner om summan av lapparnas tal du drar är exakt $T$.
+Vad är sannolikheten att du vinner?
+
+\section*{Indata}
+Den första raden av indata innehåller heltalen $N$ och $T$ ($1 \leq N \leq 20$, $1 \leq T \leq 10^9$),
+antalet lappar och det vinnande talet.
+
+Nästa rad innehåller $N$ heltal $w_1, w_2, \dots, w_N$ ($1 \leq w_i \leq 5 \cdot 10^7$),
+som beskriver talen på lapparna.
+
+\section*{Utdata}
+Skriv ut ett flyttal: sannolikheten att du vinner spelet om du spelar en gång, angiven i procent.
+Svaret accepteras om skillnaden mellan ditt svar och domarens svar inte är mer än $10^{-4}$.
